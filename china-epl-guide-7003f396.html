@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一段关于英超直播的日常 · 索引页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+            color: #2c3e50;
+            line-height: 1.75;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 40rem;
+            width: 100%;
+            background: #ffffff;
+            padding: 3rem 2rem;
+            border-radius: 24px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.02), 0 4px 20px rgba(0,0,0,0.03);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 450;
+            letter-spacing: 0.01em;
+            color: #1a2634;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #258f6e;
+            padding-left: 1rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #405b6d;
+        }
+
+        .intro em {
+            font-style: italic;
+            color: #258f6e;
+        }
+
+        .story-block {
+            margin: 1.8rem 0;
+        }
+
+        .story-block p {
+            margin-bottom: 1.25rem;
+            text-align: justify;
+        }
+
+        .list-title {
+            font-weight: 500;
+            font-size: 1.2rem;
+            margin: 2rem 0 0.8rem 0;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid #e2e8ef;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 1.2rem 0 2rem 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.8rem;
+            margin-bottom: 0.9rem;
+            font-weight: 400;
+            color: #2e4057;
+        }
+
+        ul li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #258f6e;
+            font-size: 1.2rem;
+        }
+
+        .quote-line {
+            background: #f4f7fa;
+            padding: 1.2rem 1.6rem;
+            border-radius: 16px;
+            margin: 1.8rem 0;
+            font-size: 1rem;
+            border-left: 3px solid #258f6e;
+        }
+
+        .quote-line a {
+            color: #1e6d54;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #8fb7a6;
+            transition: border-bottom 0.15s;
+        }
+
+        .quote-line a:hover {
+            border-bottom: 2px solid #1e6d54;
+        }
+
+        .faq-note {
+            margin-top: 2.2rem;
+            border-top: 1px solid #e7ecf2;
+            padding-top: 1.6rem;
+        }
+
+        .faq-note details {
+            margin-bottom: 0.8rem;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid #f0f3f7;
+        }
+
+        .faq-note summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #234a5c;
+            padding: 0.3rem 0;
+            outline: none;
+            list-style: disclosure-closed inside;
+        }
+
+        .faq-note summary::-webkit-details-marker {
+            color: #258f6e;
+        }
+
+        .faq-note details[open] summary {
+            list-style: disclosure-open inside;
+            color: #1d5e45;
+        }
+
+        .faq-note details p {
+            padding: 0.5rem 0 0.2rem 1.2rem;
+            color: #3e566a;
+            font-size: 0.95rem;
+        }
+
+        .closing {
+            margin-top: 2.5rem;
+            font-size: 0.98rem;
+            color: #4a637a;
+            border-left: 2px solid #ccd7e2;
+            padding-left: 1rem;
+            font-style: normal;
+            letter-spacing: 0.3px;
+        }
+
+        .closing a {
+            color: #258f6e;
+            text-decoration: none;
+            border-bottom: 1px solid #b8cfc2;
+        }
+
+        .closing a:hover {
+            color: #1b5c47;
+            border-bottom: 1px solid #1b5c47;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .container {
+                padding: 1.8rem 1.2rem;
+                border-radius: 20px;
+            }
+            h1 {
+                font-size: 1.7rem;
+                padding-left: 0.8rem;
+            }
+            ul li {
+                padding-left: 1.5rem;
+            }
+            .quote-line {
+                padding: 0.8rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>周末的屏幕，总有一块留给绿茵</h1>
+
+    <div class="intro">
+        <p>从赛程表上的陌生队名，到深夜自动亮起的浏览器标签页——<em>英超直播</em>这四个字，已经悄悄变成很多人周末的暗号。</p>
+    </div>
+
+    <div class="story-block">
+        <p>最早只是随便搜一场焦点战，后来发现每轮都有值得盯着的对决。积分榜、数据、伤病、裁判安排……资讯像滚雪球一样铺开。而你最常打开的，永远是那个能直接看到画面的地方：不用翻论坛，不用等录播，比赛时间一到，窗口一开，九十多分钟里什么杂事都能暂时放下。</p>
+        <p>有时候不是非要看豪门，中下游球队的保级战反倒更有嚼头。你会注意到某个边后卫的传中成功率，会去查刚换上来的小将上一场在哪踢球。这些细节别人不一定在乎，但自己摸索出来，慢慢就有了看球的脉络。</p>
+    </div>
+
+    <div class="list-title">日常使用中，这几个功能最顺手</div>
+    <ul>
+        <li><strong>赛程整合</strong> —— 不用同时开三四个 App，当前轮次、已结束、未开始一目了然，还附带实时比分。</li>
+        <li><strong>多端同步</strong> —— 手机查赛程，电脑看画面，平板放一边刷数据，同一个页面保持同步。</li>
+        <li><strong>即点即看</strong> —— 没有多余的跳转或等待，信号源稳定，适合那种“刚忙完想瞄两眼”的时刻。</li>
+        <li><strong>历史与对照</strong> —— 赛季走势、交锋记录、红黄牌统计，适合赛后延伸阅读，也适合写观赛笔记。</li>
+    </ul>
+
+    <div class="quote-line">
+        💬 有段时间我习惯先把页面开着，等开场哨响再切过去。后来发现不止我一个人这样——朋友说他把 <a href="https://china-epl.com">英超直播</a> 放在书签栏第一行，已经好几年没动过位置。
+    </div>
+
+    <div class="faq-note">
+        <details>
+            <summary>FAQ 摘要 · 关于你可能会问的几个细节</summary>
+            <p><strong>页面加载慢吗？</strong> 实测主流宽带下开播流畅，偶尔卡顿切换线路即可，不需要反复刷新。</p>
+            <p><strong>有没有回放或集锦？</strong> 通常赛后会有收录，但更推荐直接看直播——比分知道后再看录像，味道差很多。</p>
+            <p><strong>需要注册吗？</strong> 直接访问即可，没有强制登录环节，对临时想看一眼的球迷很友好。</p>
+        </details>
+        <details>
+            <summary>关于延伸阅读的习惯</summary>
+            <p>看完比赛后，很多人会顺手翻一翻同一页面里的统计对比：控球率、射正次数、跑动距离。这些数字比解说更客观，也更容易形成自己的判断。</p>
+        </details>
+    </div>
+
+    <div class="closing">
+        <p>说到底，<a href="https://china-epl.com">英超直播</a> 不只是一个链接，而是每周一次的小仪式。也许你和我一样，早就把它当成了周末日程的一部分——无所谓主队是谁，打开，坐下，九十多分钟，一切如常。</p>
+    </div>
+</div>
+</body>
+</html>
